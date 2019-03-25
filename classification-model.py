@@ -134,10 +134,10 @@ import matplotlib.pyplot as plt
 y_pos = np.arange(len(names))
  
 plt.bar(y_pos, accuracy, align='center', alpha=0.5)
-plt.xticks(y_pos, names)
+plt.xticks(y_pos, names, rotation='vertical', verticalalignment='bottom')
 plt.ylabel('Accuracy')
 plt.title('Classifier')
- 
+plt.figure(figsize=(20000,20000)) 
 plt.show() 
     
 #    ax = plt.subplot(len(datasets), len(classifiers) + 1, i)
